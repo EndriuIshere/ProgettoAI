@@ -1,0 +1,80 @@
+body{
+    background-color: #2e2e2e;
+}
+
+#container{
+    right: 100px;
+    left: 100px;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    background-color: rgba(200, 200, 200, 20%);
+}
+
+#InputText{
+    position: absolute;
+    left: 0;
+    right: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#InputText textarea{
+    border-radius: 20px;
+    border: 2px #2e2e2e solid;
+    color: white;
+    background-color: #222222;
+    padding: 10px;
+    width: 280px;
+    min-height: 40px;
+    max-height: 200px;
+    overflow-y: auto;
+    resize: none;
+    padding: 5px;
+    font-size: 16px;
+    flex: 1;
+}
+
+#InputText button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #222222;
+    box-shadow: #2e2e2e 0px 8px;
+}
+
+#InputText button:active{
+    margin-top: 8px;
+    box-shadow: #2e2e2e 0px 0px;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#response{
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+

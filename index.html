@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google AI Test</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="container">
+    <h1>The story . . .</h1>
+    <p id="response"></p>
+    <div id="InputText">
+      <textarea oninput="autoResize(this)" id="prompt" placeholder="Enter your prompt"></textarea>
+      <button onclick="getAIResponse()">></button>
+    </div>
+  </div>
+  <script src="test.js"></script>
+  <script>
+    function autoResize(textarea) {
+        textarea.style.height = "auto"; // Resetta l'altezza
+        const maxHeight = 100; // Altezza massima in pixel
+        textarea.style.height = Math.min(textarea.scrollHeight, maxHeight) + "px";
+    }
+  </script>
+</body>
+</html>
